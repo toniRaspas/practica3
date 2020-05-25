@@ -1,0 +1,40 @@
+<!--
+    <div>
+    <input type="text" (input)="onChange($event)">
+</div>
+<div></div>
+
+<div *ngFor="let post of publicaciones">
+    <h3>{{post.titulo}}</h3>
+    <p>{{post.texto}}</p>
+    <p>{{post.autor}}</p>
+    <img [src]="post.imagen">
+</div>
+-->
+
+<div class="row col-12 justify-content-center categorias container-fluid">
+    <label>Categoría</label>
+    <input type="text" (input)="onChange($event)">
+</div>
+
+<div class="container" *ngFor="let post of publicaciones">
+    <br>
+    <br>
+
+    <h2 class="row col-12 justify-content-center">{{post.titulo}}</h2>
+
+    <div class="row col-12">
+        <p class="col col-4 subtitulos">{{post.autor}}</p>
+        <p class="col col-4 text-center subtitulos">{{post.categoria}}</p>
+        <p class="col col-4 text-right subtitulos">{{post.fecha}}</p>
+    </div>
+
+    <img [src]="post.imagen" class=" row col-12">
+
+    <p class="row justify-content-center col-12 text-center alineText">{{post.texto}}</p>
+
+
+    <!--https://vertele.eldiario.es/2019/09/13/todo-series/South-Park-gamberra-renueva-temporadas_2158294190_13908668_1820x1024.jpg
+<img [src]="post.imagen" class=" row col-12">
+-->
+</div>

@@ -1,0 +1,30 @@
+<div class="container colores" style="margin-top: 100px; padding-top: 50px;">
+
+    <div class="row justify-content-center padForm">
+        <label class="col col-2">Título</label>
+        <input class="col col-6" type="text" [(ngModel)]="nuevoPost.titulo">
+    </div>
+    <div class="row justify-content-center padForm">
+        <label class="col col-2">Texto</label>
+        <textarea class="col col-6" cols="30" rows="10" [(ngModel)]="nuevoPost.texto"></textarea>
+    </div>
+    <div class="row justify-content-center padForm">
+        <label class="col col-2">Autor</label>
+        <input class="col col-6" type="text" [(ngModel)]="nuevoPost.autor">
+    </div>
+    <div class="row justify-content-center padForm">
+        <label class="col col-2">Imagen URL</label>
+        <input class="col col-6" type="text" [(ngModel)]="nuevoPost.imagen">
+    </div>
+    <div class="row justify-content-center padForm">
+        <label class="col col-2">Fecha</label>
+        <input class="col col-6" type="date" [(ngModel)]="nuevoPost.fecha">
+    </div>
+    <div class="row justify-content-center padForm">
+        <label class="col col-2">Categoría</label>
+        <input class="col col-6" type="text" placeholder="" [(ngModel)]="nuevoPost.categoria">
+    </div>
+
+    <button (click)="onAddPost()" [routerLink]="['/blog']" class=" col-12 text-center padForm">Publicar</button>
+
+</div>

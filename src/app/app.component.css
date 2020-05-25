@@ -1,0 +1,22 @@
+.botones:hover
+{
+    background-color:rgb(192, 185, 185) ;
+    color: rgb(53, 49, 49);
+}
+.botones
+{
+    background: none;
+  border: 0;
+  color: rgb(147, 189, 147);
+  /* cursor: default; */
+  line-height: normal;
+  overflow: visible;
+  padding: 10px;
+  width: 49%;
+   font-weight: bold;
+}
+header{
+    height: 43px;
+    background-color:   rgb(53, 49, 49);
+  
+}

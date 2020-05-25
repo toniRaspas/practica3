@@ -1,0 +1,33 @@
+img
+{width: 100%;
+}
+
+input
+{
+   
+    width:100px;
+    margin-left: 10px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 10px;
+    /*margin-bottom: 30px;*/
+}
+label
+{  margin-bottom: 30px;
+padding: 0;}
+.categorias
+{
+    background-color: rgb(53, 49, 49);
+    height: 35px;
+    margin: 0 auto;
+    color: rgb(147, 189, 147);
+    font-weight: bold;
+}
+.subtitulos
+{
+    font-style: italic;
+    font-size: 16px;
+   height: 20px; color: rgb(147, 189, 147);
+}
+.alineText
+{padding: 20px 40px 20px 40px;}
